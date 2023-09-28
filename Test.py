@@ -12,17 +12,20 @@ print(data.head())
 print(data.isnull().sum())
 print(data.info())
 
+# distribution of impressions From HOME
 plt.figure(figsize=(10, 8))
 plt.style.use('fivethirtyeight')
 plt.title("Distribution of Impressions From Home")
 sns.distplot(data['From Home'])
 plt.show()
 
+# Distribution of Impressions From Hashtags
 plt.figure(figsize=(10, 8))
 plt.title("Distribution of Impressions From Hashtags")
 sns.distplot(data['From Hashtags'])
 plt.show()
 
+# Impressions From various sources on Instagram:
 home = data['From Home'].sum()
 hashtags = data['From Hashtags'].sum()
 explore = data["From Explore"].sum()
@@ -34,12 +37,12 @@ values = [home, hashtags, explore, other]
 fig = px.pie(data, values=values, names=labels, title='Impressions on Instagram Posts From Various Sources, hole=0.5')
 fig.show()
 
+# Analyzing Content
 text = " ".join(i for i in data.Caption)
 stopwords = set(STOPWORDS)
 wordCloud = WordCloud(stopwords=stopwords, background_color="white").generate(text)
-plt.style.use('classic')
-plt.figure( figsize=(12,10))
-plt.imshow(WordCloud, interpolation='bilinear')
+plt.figure(figsize=(12, 10))
+plt.imshow(wordCloud, interpolation='bilinear')
 plt.axis("off")
 plt.show()
 
@@ -63,19 +66,23 @@ plt.imshow(wordCloud, interpolation='bilinear')
 plt.axis("off")
 plt.show()
 
+# Relationship Betweem Likes and Impressions
 figure = px.scatter(data_frame = data, x="Impressions",
                     y="Likes", size="Likes", trendline="ols",
                     title = "Relationship Betweem Likes and Impressions")
 figure.show()
 
+# Relationship Between comments and Total
 figure = px.scatter(data_frame = data, x="Impressions", y="Comments", size="Comments", trendline="ols",
                     title = "Relationship Between comments and Total")
 figure.show()
 
+# Relationship Between Shares and Total Impressions
 figure = px.scatter(data_frame = data, x = "Impressions", y="Shares", size="Shares", trendline="ols",
                     title="Relationship Between Shares and Total Impressions")
 figure.show()
 
+# Relationship Between Post Saves and Total Impressions
 figure = px.scatter(data_frame = data, x = "Impressions", y="Saves", size="Saves", trendline="ols",
                     title="Relationship Between Post Saves and Total Impressions")
 figure.show()

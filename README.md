@@ -52,4 +52,5 @@ The original case study: https://statso.io/instagram-reach-analysis-case-study/
 Kharwal, Aman. "Instagram Reach Analysis using Python." *The Clever Programmer*, 22 Mar 2022. https://thecleverprogrammer.com/2022/03/22/instagram-reach-analysis-using-python/
 
 
-![Demo](Result/ create a wordcloud of the hashtags column.png)
+<img width="996" alt="Distribution of Impressions From Hashtags" src="https://github.com/DerrickLAM94/IG_Reach_Analysis/assets/140989898/13fedbab-d867-4fd6-a124-d0f782d29388">
+

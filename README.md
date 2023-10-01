@@ -107,6 +107,7 @@ A more number of shares will result in a higher reach, but shares don’t affect
 Convenrsion Rate
 
 <img width="615" alt="螢幕截圖 2023-09-28 下午5 55 23" src="https://github.com/DerrickLAM94/IG_Reach_Analysis/assets/140989898/50219eea-88de-449c-b96e-fc2649e03cc9">
+
 <img width="136" alt="螢幕截圖 2023-09-28 下午5 56 43" src="https://github.com/DerrickLAM94/IG_Reach_Analysis/assets/140989898/9b812e90-f80c-4d2f-b525-10b041486649">
 
 the conversation rate of the ig account is 41% which is a pretty good conversion rate. 
@@ -114,6 +115,7 @@ the conversation rate of the ig account is 41% which is a pretty good conversion
 IG reach prediction model 
 
 <img width="653" alt="螢幕截圖 2023-09-28 下午5 59 09" src="https://github.com/DerrickLAM94/IG_Reach_Analysis/assets/140989898/95408c51-5440-410c-a37d-d806eb5bce16">
+
 <img width="329" alt="螢幕截圖 2023-09-28 下午6 00 05" src="https://github.com/DerrickLAM94/IG_Reach_Analysis/assets/140989898/3e8e2689-4e40-45f3-965d-39d8096a016f">
 
 predict the reach of an Instagram post by giving inputs to the machine learning model:
